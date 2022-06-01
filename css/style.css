@@ -95,19 +95,40 @@ h3{ font-size: 2.4rem; }
 	color: var(--secundario);
 }
 
+/** Grid **/
+.grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+@media(min-width:  768px){
+	.grid{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+
 /** Productos **/
 .productos{
-
+	background-color: var(--primarioOscuro);
+	padding: 1rem;
 }
 .productos__imagen{
-
+	width: 100%;
 }
 .productos__informacion{
 
 }
-.productos__nombre{
-
-}
+.productos__nombre{font-size: 4rem;}
 .productos__precio{
-
+	font-size: 2.8rem;
+	color: var(--secundario);
+}
+.productos__nombre,
+.productos__precio{
+	font-family: var(--fuentePrincipal);
+	margin: 1rem 0;
+	text-align: center;
+	line-height: 1.9rem;
 }
